@@ -1,27 +1,27 @@
-public class Image implements Playable{
-    private String img;
+public class Sound implements Playable{
+    private String sound;
 
-    public Image(String img) {
-        this.img = img;
+    public Sound(String sound) {
+        this.sound = sound;
     }
 
     @Override
     public String getAudio() {
-        return null;
+        return sound;
     }
 
     @Override
     public String getVideo() {
-        return img;
+        return null;
     }
 
     @Override
     public boolean hasAudio() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean hasVideo() {
-        return true;
+        return false;
     }
 }
